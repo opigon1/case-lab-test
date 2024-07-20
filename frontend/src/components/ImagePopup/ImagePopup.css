@@ -1,0 +1,128 @@
+.popup {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.25s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup__container-image {
+  position: relative;
+  max-width: 75vw;
+  max-height: 75vh;
+  width: 100%;
+  height: 100%;
+}
+
+.popup__image-container {
+  margin: 0;
+}
+
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__image {
+  max-width: 75vw;
+  max-height: 75vh;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.popup__text {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+  padding-top: 10px;
+  color: white;
+}
+
+.popup__closed {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  background-image: url(../../images/ClosedIcon.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: opacity linear 0.2s;
+}
+
+.popup__image-switch-btx {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 25px;
+  height: 25px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: opacity linear 0.2s;
+}
+
+.popup__image-text-container {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup__image-length {
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.popup__image-switch-btx_type_next {
+  background-image: url(../../images/next-arrow-navigation.svg);
+}
+
+.popup__image-switch-btx_type_prev {
+  background-image: url(../../images/next-arrow-navigation.svg);
+  transform: rotate(-180deg);
+}
+
+.popup__closed:hover {
+  opacity: 0.6;
+}
+
+.popup__image-switch-btx:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 516px) {
+  .popup__closed {
+    right: 0;
+    top: -15px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+  }
+
+  .popup__image-switch-btx {
+    width: 15px;
+    height: 15px;
+    background-size: 15px 15px;
+  }
+}
