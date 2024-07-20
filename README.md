@@ -25,9 +25,9 @@
 
 ### Клонировать репозиторий:
 
-    git clone git@github.com:opigon1/case-lab-full.git
+    git@github.com:opigon1/case-lab-test.git
 
-    cd case-lab-full
+    cd case-lab-test
 
 ### Настройка и запуск Docker приложения:
 
