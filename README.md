@@ -49,15 +49,15 @@
 
 <img src='./frontend/src/images/pagination.png'>
 
-### Пагинация карточек
+### Модальное окно карточки
 
 <img src='./frontend/src/images/popup.png'>
 
-### Колекция карточек
+### Адаптив
 
 <img src='./frontend/src/images/adaptive.png'>
 
-### Адаптив
+### Коллекция карточек
 
 <img src='./frontend/src/images/card-colection.png'>
 
